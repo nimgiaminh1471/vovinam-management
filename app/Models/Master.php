@@ -24,6 +24,10 @@ class Master extends Model implements HasMedia
         'company_id',
     ];
 
+    protected $appends = [
+        'code',
+    ];
+
     protected $casts = [
         'dob' => 'date',
     ];
@@ -60,5 +64,10 @@ class Master extends Model implements HasMedia
     public function rankHistories(): HasMany
     {
         return $this->hasMany(RankHistory::class);
+    }
+
+    public function getCodeAttribute(): string
+    {
+        return 'M-' . str_pad($this->id, 9, '0', STR_PAD_LEFT);
     }
 }
