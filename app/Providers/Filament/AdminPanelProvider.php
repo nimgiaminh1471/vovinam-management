@@ -58,7 +58,7 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->tenant(Company::class, ownershipRelationship: 'company', slugAttribute: 'slug')
-            ->tenantDomain('{tenant:slug}.vovinam-management.test')
+            ->tenantDomain('{tenant:slug}.' . config('app.central_domain'))
             ->tenantRegistration(RegisterCompany::class)
             ->tenantProfile(EditCompanyProfile::class);
     }

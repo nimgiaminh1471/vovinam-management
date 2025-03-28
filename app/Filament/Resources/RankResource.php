@@ -32,7 +32,6 @@ class RankResource extends Resource
                 //
                 TextInput::make('name'),
                 TextInput::make('description'),
-                TextInput::make('order'),
                 SpatieMediaLibraryFileUpload::make('image')
             ]);
     }
@@ -40,11 +39,11 @@ class RankResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+            ->reorderable('sort_order')
             ->columns([
                 //
                 TextColumn::make('name'),
                 TextColumn::make('description'),
-                TextColumn::make('order'),
                 SpatieMediaLibraryImageColumn::make('image'),
             ])
             ->filters([
@@ -57,7 +56,8 @@ class RankResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->defaultSort('sort_order', 'asc');
     }
 
     public static function getRelations(): array

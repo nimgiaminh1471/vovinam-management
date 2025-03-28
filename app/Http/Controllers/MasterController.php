@@ -10,13 +10,14 @@ class MasterController extends Controller
     /**
      * Display the specified master.
      *
-     * @param  int  $id
+     * @param  string  $code
      * @return \Illuminate\View\View
      */
-    public function show($id)
+    public function show($code)
     {
         $master = Master::with(['rank', 'degrees.rank', 'rankHistories.previousRank', 'rankHistories.newRank'])
-            ->findOrFail($id);
+            
+            ->firstOrFail();
 
         return view('masters.show', compact('master'));
     }

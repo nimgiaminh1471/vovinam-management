@@ -68,6 +68,6 @@ class Master extends Model implements HasMedia
 
     public function getCodeAttribute(): string
     {
-        return 'M-' . str_pad($this->id, 9, '0', STR_PAD_LEFT);
+        return 'M' . str_pad($this->id, 9, '0', STR_PAD_LEFT);
     }
 }
