@@ -32,7 +32,7 @@
 <body class="font-sans antialiased bg-gray-50">
     <div class="min-h-screen">
         <!-- Navigation -->
-        <nav class="bg-white border-b border-gray-200">
+        <!-- <nav class="bg-white border-b border-gray-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <div class="flex">
@@ -41,17 +41,10 @@
                                 Vovinam
                             </a>
                         </div>
-                        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                            <a href="{{ route('masters.index') }}" class="inline-flex items-center px-1 pt-1 border-b-2 
-                                {{ request()->routeIs('masters.index') ? 'border-vovinam-primary text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }}
-                                text-sm font-medium">
-                                Masters
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Page Heading -->
         @hasSection('header')
@@ -71,7 +64,7 @@
         <footer class="bg-white border-t border-gray-200 mt-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <div class="text-center text-gray-500 text-sm">
-                    &copy; {{ date('Y') }} Vovinam Management. All rights reserved.
+                    &copy; {{ date('Y') }} Vovinam. All rights reserved.
                 </div>
             </div>
         </footer>

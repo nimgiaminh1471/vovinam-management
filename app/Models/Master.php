@@ -71,7 +71,7 @@ class Master extends Model implements HasMedia
         return 'M' . str_pad($this->id, 9, '0', STR_PAD_LEFT);
     }
 
-    public function getIdFromCode(string $code): int
+    public static function getIdFromCode(string $code): int
     {
         return (int) substr($code, 1);
     }

@@ -7,12 +7,6 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ $master->full_name }}
         </h2>
-        <a href="{{ route('masters.index') }}" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Masters
-        </a>
     </div>
 @endsection
 
@@ -26,8 +20,8 @@
                     <!-- Avatar Section -->
                     <div class="md:w-1/3 mb-6 md:mb-0 flex flex-col items-center">
                         <div class="w-48 h-48 rounded-full overflow-hidden bg-gray-100 mb-4">
-                            @if($master->getFirstMediaUrl('avatar'))
-                                <img src="{{ $master->getFirstMediaUrl('avatar') }}" alt="{{ $master->full_name }}" class="w-full h-full object-cover">
+                            @if($master->getFirstMediaUrl())
+                                <img src="{{ $master->getFirstMediaUrl() }}" alt="{{ $master->full_name }}" class="w-full h-full object-cover">
                             @else
                                 <div class="flex items-center justify-center h-full">
                                     <svg class="w-24 h-24 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
