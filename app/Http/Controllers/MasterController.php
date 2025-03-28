@@ -15,8 +15,9 @@ class MasterController extends Controller
      */
     public function show($code)
     {
+        $id = Master::getIdFromCode($code);
         $master = Master::with(['rank', 'degrees.rank', 'rankHistories.previousRank', 'rankHistories.newRank'])
-            
+            ->where('id', $id)
             ->firstOrFail();
 
         return view('masters.show', compact('master'));
