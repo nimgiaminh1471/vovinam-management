@@ -14,6 +14,7 @@ use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Actions\Action;
 
 class MasterResource extends Resource
 {
@@ -104,6 +105,11 @@ class MasterResource extends Resource
                 //
             ])
             ->actions([
+                Action::make('print_card')
+                    ->label('In Thẻ')
+                    ->icon('heroicon-o-printer')
+                    ->url(fn (Master $record): string => route('masters.card', $record))
+                    ->openUrlInNewTab(),
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
