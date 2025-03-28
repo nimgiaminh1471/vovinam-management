@@ -16,7 +16,7 @@ class MasterController extends Controller
     public function show($code)
     {
         $id = Master::getIdFromCode($code);
-        $master = Master::with(['rank', 'degrees.rank', 'rankHistories.previousRank', 'rankHistories.newRank'])
+        $master = Master::with(['rank', 'degrees.rank', 'rankHistories.previousRank', 'rankHistories.newRank', 'company'])
             ->where('id', $id)
             ->firstOrFail();
 

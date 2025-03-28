@@ -8,16 +8,14 @@ Route::domain('{subdomain}.' . config('app.central_domain'))->group(function () 
     Route::middleware(['check.tenant'])->group(function () {
         Route::get('/', function () {
             $tenant = session()->get('tenant');
-            return view('welcome', compact('tenant'));
+            return view('home', compact('tenant'));
         });
-
-
     });
 });
 
 Route::domain(config('app.central_domain'))->group(function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('home');
     }); 
     // Masters routes
     Route::get('/masters', [MasterController::class, 'index'])->name('masters.index');

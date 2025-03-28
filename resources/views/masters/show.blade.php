@@ -48,6 +48,11 @@
                                 <p class="text-gray-900">{{ $master->code }}</p>
                             </div>
 
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Company</h3>
+                                <p class="text-gray-900">{{ $master->company->name }}</p>
+                            </div>
+
                             @if($master->dob)
                             <div>
                                 <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Date of Birth</h3>
