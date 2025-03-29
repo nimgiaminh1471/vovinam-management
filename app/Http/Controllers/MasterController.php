@@ -34,4 +34,18 @@ class MasterController extends Controller
         
         return view('masters.index', compact('masters'));
     }
+
+    public function getMasterByCode($code)
+    {
+        $id = Master::getIdFromCode($code);
+        $master = Master::with(['rank', 'degrees.rank', 'rankHistories.previousRank', 'rankHistories.newRank', 'company'])
+            ->where('id', $id)
+            ->first();
+
+        if (!$master) {
+            return response()->json(['error' => 'Master not found'], 404);
+        }
+
+        return response()->json($master);
+    }
 }

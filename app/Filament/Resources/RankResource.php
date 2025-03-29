@@ -32,7 +32,7 @@ class RankResource extends Resource
                 //
                 TextInput::make('name'),
                 TextInput::make('description'),
-                SpatieMediaLibraryFileUpload::make('image')
+                SpatieMediaLibraryFileUpload::make('image')->collection('images')
             ]);
     }
 
@@ -44,7 +44,7 @@ class RankResource extends Resource
                 //
                 TextColumn::make('name'),
                 TextColumn::make('description'),
-                SpatieMediaLibraryImageColumn::make('image'),
+                SpatieMediaLibraryImageColumn::make('image')->collection('images'),
             ])
             ->filters([
                 //
