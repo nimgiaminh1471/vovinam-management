@@ -6,13 +6,16 @@
     <!-- Hero Section -->
     <div class="relative bg-gray-900">
         <div class="absolute inset-0">
-            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80" alt="Luyện tập Vovinam">
+            <img class="w-full h-full object-cover" src="https://images.,.gg/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80" alt="Luyện tập Vovinam">
             <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
         </div>
         <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Vovinam</h1>
-            <p class="mt-6 text-xl text-gray-300 max-w-3xl">Nghệ thuật Võ thuật Việt Nam - Một hệ thống toàn diện về tự vệ, thể lực và phát triển cá nhân.</p>
-            <div class="mt-10">
+            <div class="flex items-center justify-center mb-8">
+                <img src="{{ asset('images/vovinam-logo.svg') }}" alt="Vovinam Logo" class="h-32 w-32">
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-center">Vovinam</h1>
+            <p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto text-center">Nghệ thuật Võ thuật Việt Nam - Một hệ thống toàn diện về tự vệ, thể lực và phát triển cá nhân.</p>
+            <div class="mt-10 flex justify-center">
                 <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-vovinam-primary hover:bg-yellow-500">
                     Bắt đầu Luyện tập
                 </a>
@@ -31,6 +34,92 @@
                 <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                     Vovinam là môn võ thuật Việt Nam kết hợp kỹ thuật truyền thống với phương pháp luyện tập hiện đại. Nó nhấn mạnh cả sự phát triển thể chất và tinh thần.
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <div class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-vovinam-primary font-semibold tracking-wide uppercase">Lịch sử</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Lịch Sử Vovinam
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10">
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-vovinam-primary text-white">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg font-medium text-gray-900">1912 - Khởi nguồn</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Võ sư Nguyễn Lộc sinh ngày 24 tháng 05, 1912 tại làng Hữu Bằng, huyện Thạch Thất, tỉnh Sơn Tây (nay là Hà Tây). Ông là trưởng nam trong một gia đình gồm năm anh chị em.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-vovinam-primary text-white">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg font-medium text-gray-900">1940 - Khai mở</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Vovinam chính thức được giảng dạy tại trường Sư phạm Hà Nội (E'cole Normal) vào mùa xuân năm 1940. Sau đó, nhiều câu lạc bộ Vovinam được mở rộng, thu hút đông đảo thanh niên từ mọi tầng lớp xã hội.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-vovinam-primary text-white">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg font-medium text-gray-900">1954 - Phát triển</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Sau khi di cư vào miền Nam, Vovinam phát triển mạnh mẽ và trở thành một trong những môn võ phổ biến nhất tại Việt Nam. Nhiều thế hệ võ sư tài năng được đào tạo và phát triển.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-vovinam-primary text-white">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg font-medium text-gray-900">1975 - Quốc tế hóa</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Vovinam bắt đầu phát triển ra quốc tế, với các trung tâm đào tạo được thành lập tại nhiều quốc gia trên thế giới. Môn võ được giảng dạy trong các trường học và câu lạc bộ thể thao.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-vovinam-primary text-white">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg font-medium text-gray-900">Hiện tại</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Vovinam tiếp tục phát triển và được công nhận là một trong những môn võ thuật truyền thống của Việt Nam. Môn võ được giảng dạy rộng rãi trong các trường học, câu lạc bộ thể thao và được tổ chức thi đấu quốc tế.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
